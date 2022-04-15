@@ -1,6 +1,8 @@
 <div class="projects">
-  <app-project-item></app-project-item>
-  <app-project-item></app-project-item>
-  <app-project-item></app-project-item>
-  <app-project-item></app-project-item>
+  <div *ngIf="!isLoading"> 
+    <app-project-item *ngFor="let project of projectList" [project]="project"></app-project-item>
+  </div>
+  <div class="loader-container">
+    <app-loader *ngIf="isLoading"></app-loader>
+  </div>
 </div>

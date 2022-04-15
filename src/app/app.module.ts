@@ -9,6 +9,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectItemComponent } from './projects/project-item/project-item.component';
 
 import { firebaseConfig } from 'src/environments/environment';
+import { LoaderComponent } from './_shared/modals/loader/loader.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const app = initializeApp(firebaseConfig);
 
@@ -17,10 +19,12 @@ const app = initializeApp(firebaseConfig);
     AppComponent,
     ProjectsComponent,
     SkillsComponent,
-    ProjectItemComponent
+    ProjectItemComponent,
+    LoaderComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
