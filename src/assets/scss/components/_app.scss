@@ -2,7 +2,11 @@
   color: $BLACK;
 
   .header {
-    background-color: $BASE-COLOR;
+    // background-color: $BASE-COLOR;
+    // background: rgb(34,193,195);
+    // background: linear-gradient(0deg, rgba(34,193,195,0.10120022129945727) 0%, rgba(21,177,229,0.05) 100%);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.05) 0%, rgba(21,177,229,0.02) 100%);
     display: flex;
     flex-direction: column;
     padding-top: 10px;

@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/tarts",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

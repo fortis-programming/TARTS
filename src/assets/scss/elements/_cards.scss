@@ -1,0 +1,45 @@
+.card {
+   height: 250px;
+   width: 250px;
+   padding: 10px;
+   
+   img {
+      margin: auto;
+   }
+
+   .card-img-overlay {
+      display: none;
+      // background-color: rgba(0, 0, 0, 0.308);
+      background-color: $PRIMARY-COLOR;
+      .card-title {
+         z-index: 1;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+         cursor: default;
+      }
+   }
+
+   &:hover .card-img-overlay {
+      display: block;
+      animation-name: slide;
+      animation-duration: 0.2s;
+   }
+
+   @keyframes slide {
+      from {
+         top: 50%;
+      }
+
+      to {
+         top: 0;
+      }
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .card {
+      width: 100%;
+   }
+}

@@ -1,7 +1,7 @@
 <div class="app">
   <div class="header">
     <div class="wrapper">
-      <div class="user-details p-4">
+      <div class="user-details p-3">
         <img src="../assets/images/me-square.png" alt="Profile" class="shadow-sm">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mb-4" viewBox="0 0 20 20" fill="currentColor">
           <path fill-rule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clip-rule="evenodd" />
@@ -10,7 +10,7 @@
         <p>Learning how to code.</p>
       </div>
     </div>
-    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills sticky-top" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
           type="button" role="tab" aria-controls="pills-home" aria-selected="true">
@@ -35,12 +35,12 @@
     </ul>
   </div>
   <div class="wrapper">
-    <div class="tab-content" id="pills-tabContent">
+    <div class="tab-content py-4" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        TAB1
+        <app-projects></app-projects>
       </div>
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        TAB2
+        <app-skills></app-skills>
       </div>
     </div>
   </div>
