@@ -11,6 +11,7 @@ import { ProjectItemComponent } from './projects/project-item/project-item.compo
 import { firebaseConfig } from 'src/environments/environment';
 import { LoaderComponent } from './_shared/modals/loader/loader.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
 
 const app = initializeApp(firebaseConfig);
 
@@ -20,7 +21,8 @@ const app = initializeApp(firebaseConfig);
     ProjectsComponent,
     SkillsComponent,
     ProjectItemComponent,
-    LoaderComponent
+    LoaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
