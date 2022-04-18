@@ -1,0 +1,44 @@
+.footer {
+   border-top: 1px solid whitesmoke;
+   .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   .wrapper > * {
+      margin: auto 0;
+   }
+   
+   .credits {
+      color: $PRIMARY-COLOR;
+      font-size: small;
+   }
+
+   .social-icons {
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+
+      .icon {
+         border: 1px solid whitesmoke;
+         padding: 8px;         
+         border-radius: 50%;
+
+         svg {
+            height: 24px;
+            width: 24px;
+            fill: $SECONDARY;
+         }
+
+         &:hover {
+            background-color: $BASE-COLOR;
+            svg {
+               fill: $PRIMARY-COLOR;
+               transform: scale(0.95);
+               transition: 0.1s ease-out;
+            }
+         }
+      }
+   }
+}
