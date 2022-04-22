@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ProjectModel } from 'src/app/_shared/models/project.model';
 
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-project-item',
   templateUrl: './project-item.component.html',
@@ -16,6 +18,7 @@ export class ProjectItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }

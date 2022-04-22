@@ -1,5 +1,6 @@
 .footer {
    border-top: 1px solid whitesmoke;
+   
    .wrapper {
       display: flex;
       flex-direction: row;
@@ -11,7 +12,7 @@
    }
    
    .credits {
-      color: $PRIMARY-COLOR;
+      color: $SECONDARY;
       font-size: small;
    }
 
