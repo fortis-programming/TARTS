@@ -1,5 +1,5 @@
 <div class="projects">
-  <div *ngIf="!isLoading"> 
+  <div *ngIf="!isLoading" class="project-container"> 
     <app-project-item *ngFor="let project of projectList" [project]="project"></app-project-item>
   </div>
   <div class="loader-container">

@@ -1,0 +1,24 @@
+.skills {
+
+
+  .accordion {
+    .accordion-item {
+      .accordion-body {
+        display: flex;
+        gap: 0.5rem;
+        svg, img {
+          height: 25px;
+          border-radius: 4px;
+          background-color: white;
+        }
+
+        a {
+          border: 1px solid $BASE-COLOR;
+          padding: 4px 8px;
+          border-radius: 4px;
+          font-size: 0.899rem;
+        }
+      }
+    }
+  }
+}

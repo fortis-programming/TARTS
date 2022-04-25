@@ -1,0 +1,12 @@
+.buttons {
+  padding: 5px 20px;
+  border-radius: 4px;
+  background-color: none;
+  border: none;
+  font-size: 0.888rem;
+
+  &__primary {
+    background-color: $PRIMARY-COLOR;
+    color: white;
+  }
+}

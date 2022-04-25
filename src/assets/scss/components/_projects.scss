@@ -1,13 +1,19 @@
 .projects {
-   display: flex;
-   flex-wrap: wrap;
-   gap: 1rem;
-   justify-content: center;
+  display: flex;
 
-   .loader-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 100px;
-   }
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
 }
