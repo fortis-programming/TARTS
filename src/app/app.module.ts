@@ -12,6 +12,7 @@ import { firebaseConfig } from 'src/environments/environment';
 import { LoaderComponent } from './_shared/modals/loader/loader.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { SocialProofComponent } from './social-proof/social-proof.component';
 
 const app = initializeApp(firebaseConfig);
 
@@ -22,7 +23,8 @@ const app = initializeApp(firebaseConfig);
     SkillsComponent,
     ProjectItemComponent,
     LoaderComponent,
-    FooterComponent
+    FooterComponent,
+    SocialProofComponent
   ],
   imports: [
     BrowserModule,

@@ -17,4 +17,8 @@ export class AppComponent implements OnInit {
     }, 500);
   }
 
+  darkMode = false;
+  enableDarkMode(): void {
+    (this.darkMode)? this.darkMode = false : this.darkMode = true;
+  }
 }
