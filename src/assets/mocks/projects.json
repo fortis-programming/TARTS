@@ -2,22 +2,22 @@
    "data": [
       {
          "id": "1",
-         "projectName": "Project Name",
+         "projectName": "Aconbel Builders",
          "image": "../assets/images/a-conbel.png"
       },
       {
          "id": "2",
-         "projectName": "Project Name",
+         "projectName": "Earthquake Detector",
          "image": "../assets/images/a-conbel.png"
       },
       {
          "id": "3",
-         "projectName": "Project Name",
+         "projectName": "Safety Wizard",
          "image": "../assets/images/a-conbel.png"
       },
       {
          "id": "4",
-         "projectName": "Project Name",
+         "projectName": "IRAMS",
          "image": "../assets/images/a-conbel.png"
       }
    ]

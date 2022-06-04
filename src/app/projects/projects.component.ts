@@ -18,4 +18,18 @@ export class ProjectsComponent implements OnInit {
       this.isLoading = false;
     });
   }
+
+  projectData: ProjectModel = {
+    id: '',
+    projectName: '',
+    image: '',
+  };
+
+  openProject(projectId: string): void {
+    this.projectService.getProjects().subscribe((response) => {
+      this.projectData = response.data.filter((data: ProjectModel) =>
+        data.id.toLowerCase().includes(projectId.toLowerCase())
+      )[0];
+    });
+  }
 }
