@@ -1,13 +1,14 @@
 <div class="projects">
-  <div *ngIf="!isLoading" class="project-container"> 
-    <app-project-item *ngFor="let project of projectList; let index = index" [project]="project" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="openProject(project.id)"></app-project-item>
+  <div *ngIf="!isLoading" class="project-container">
+    <app-project-item *ngFor="let project of projectList; let index = index" [project]="project" data-bs-toggle="modal"
+      data-bs-target="#exampleModal" (click)="openProject(project.id)"></app-project-item>
   </div>
   <div class="loader-container">
     <app-loader *ngIf="isLoading"></app-loader>
   </div>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -37,10 +38,10 @@
           </button>
         </div>
       </div>
-      <!-- <div class="modal-footer">
+      <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Send message</button>
-      </div> -->
+      </div>
     </div>
   </div>
-</div>
+</div> -->

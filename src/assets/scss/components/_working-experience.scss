@@ -1,0 +1,37 @@
+.working-exprience {
+  display: flex;
+  justify-content: center;
+
+  .timeline {
+    border-left: 1px solid $PRIMARY-COLOR;
+    position: relative;
+    list-style: none;
+    top: 9px;
+  }
+
+
+
+  .timeline .timeline-item {
+    position: relative;
+    gap: 1px;
+
+    h5 {
+      font-weight: 500;
+    }
+  }
+
+  .timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 8px;
+  }
+
+  .timeline .timeline-item:after {
+    background-color: $PRIMARY-COLOR;
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+  }
+}

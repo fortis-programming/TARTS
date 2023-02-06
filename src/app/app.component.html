@@ -18,8 +18,8 @@
     </div>
     <ul class="nav nav-pills sticky-top" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation" data-aos="fade-up">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-          type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#home" type="button"
+          role="tab" aria-controls="home" aria-selected="true">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path
               d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
@@ -28,26 +28,42 @@
         </button>
       </li>
       <li class="nav-item" role="presentation" data-aos="fade-up">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#skills" type="button"
+          role="tab" aria-controls="skills" aria-selected="false">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5"
             [ngClass]="{'heart-red': heart == false, 'heart': heart == true }" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd"
               d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
               clip-rule="evenodd" />
           </svg>
-          <span>What i know</span>
+          <span>What I know</span>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation" data-aos="fade-up">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#experience" type="button"
+          role="tab" aria-controls="pills-profile" aria-selected="false">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <path fill-rule="evenodd"
+              d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z"
+              clip-rule="evenodd" />
+            <path
+              d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
+          </svg>
+          <span>Working Experience</span>
         </button>
       </li>
     </ul>
   </div>
   <div class="wrapper">
     <div class="tab-content py-5" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="pills-home-tab">
         <app-projects></app-projects>
       </div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="pills-profile-tab">
         <app-skills></app-skills>
+      </div>
+      <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <app-working-experience></app-working-experience>
       </div>
     </div>
   </div>
