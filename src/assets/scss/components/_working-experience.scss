@@ -9,14 +9,19 @@
     top: 9px;
   }
 
-
-
   .timeline .timeline-item {
     position: relative;
-    gap: 1px;
+    gap: 0.5rem;
 
-    h5 {
+    p {
       font-weight: 500;
+      font-size: large;
+      color: $PRIMARY-COLOR;
+
+      span {
+        color: $BLACK;
+        font-size: 0.8rem;
+      }
     }
   }
 

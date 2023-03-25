@@ -12,9 +12,10 @@ export class ProjectItemComponent implements OnInit {
   @Input() project: ProjectModel = {
     id: '',
     projectName: '',
-    image: ''
+    image: '',
+    url: '',
   }
-  
+
   constructor() { }
 
   ngOnInit(): void {

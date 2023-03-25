@@ -8,7 +8,7 @@ import { ProjectModel } from '../_shared/models/project.model';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-  constructor(private projectService: ProjectService) {}
+  constructor(private projectService: ProjectService) { }
 
   projectList: ProjectModel[] = [];
   isLoading = true;
@@ -23,6 +23,7 @@ export class ProjectsComponent implements OnInit {
     id: '',
     projectName: '',
     image: '',
+    url: '',
   };
 
   openProject(projectId: string): void {
