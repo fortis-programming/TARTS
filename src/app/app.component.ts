@@ -1,10 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'TARTS';
+  heart = false;
+  ngOnInit(): void {
+    AOS.init();
+    setTimeout(() => {
+      this.heart = true;
+    }, 500);
+  }
+
+  darkMode = false;
+  enableDarkMode(): void {
+    (this.darkMode)? this.darkMode = false : this.darkMode = true;
+  }
 }

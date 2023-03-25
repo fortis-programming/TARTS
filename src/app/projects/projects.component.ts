@@ -8,7 +8,7 @@ import { ProjectModel } from '../_shared/models/project.model';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-  constructor(private projectService: ProjectService) {}
+  constructor(private projectService: ProjectService) { }
 
   projectList: ProjectModel[] = [];
   isLoading = true;
@@ -16,6 +16,21 @@ export class ProjectsComponent implements OnInit {
     this.projectService.getProjects().subscribe((response) => {
       this.projectList = response.data;
       this.isLoading = false;
+    });
+  }
+
+  projectData: ProjectModel = {
+    id: '',
+    projectName: '',
+    image: '',
+    url: '',
+  };
+
+  openProject(projectId: string): void {
+    this.projectService.getProjects().subscribe((response) => {
+      this.projectData = response.data.filter((data: ProjectModel) =>
+        data.id.toLowerCase().includes(projectId.toLowerCase())
+      )[0];
     });
   }
 }

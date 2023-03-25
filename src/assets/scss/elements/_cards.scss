@@ -1,46 +1,98 @@
 .card {
-   height: 250px;
-   width: 250px;
-   padding: 10px;
-   
-   img {
-      margin: auto;
-   }
+  height: 250px;
+  width: 250px;
+  padding: 10px;
+  background-color: transparent;
 
-   .card-img-overlay {
+  img {
+    margin: auto;
+  }
+
+  .card-img-overlay {
+    // background-color: rgba(0, 0, 0, 0.308);
+    background-color: rgba(0, 0, 0, 0.623);
+    max-height: fit-content;
+    margin-top: 78%;
+    display: none;
+
+    .card-title {
+      max-height: auto;
+      z-index: 1;
+      display: flex;
+      align-self: baseline;
+      cursor: default;
+      margin-bottom: 0%;
+      font-weight: 400;
+    }
+
+    svg {
+      height: 24px;
+      cursor: pointer;
+      color: white;
+    }
+  }
+
+  &:hover .card-img-overlay {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    animation-name: slide;
+    animation-duration: 0.2s;
+  }
+
+
+  @keyframes slide {
+    0% {
+      opacity: 0%;
       display: none;
-      // background-color: rgba(0, 0, 0, 0.308);
-      background-color: $PRIMARY-COLOR;
-      .card-title {
-         z-index: 1;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         height: 100%;
-         cursor: default;
-      }
-   }
+    }
 
-   &:hover .card-img-overlay {
-      display: block;
-      animation-name: slide;
-      animation-duration: 0.2s;
-   }
+    50% {
+      opacity: 0%;
+      display: none;
+    }
 
-
-   @keyframes slide {
-      from {
-         top: 50%;
-      }
-
-      to {
-         top: 0;
-      }
-   }
+    100% {
+      display: flex;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
-   .card {
-      width: 100%;
-   }
+  .card {
+    width: 100%;
+  }
+}
+
+.heart-red {
+  color: red;
+  // animation-name: heart;
+  // animation-duration: 2s;
+}
+
+.heart {
+  color: $SECONDARY;
+  animation-name: heart1;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes heart {
+  from {
+    color: $SECONDARY;
+  }
+
+  to {
+    color: red;
+  }
+}
+
+@keyframes heart1 {
+  to {
+    color: $SECONDARY;
+  }
+
+  from {
+    color: red;
+  }
 }

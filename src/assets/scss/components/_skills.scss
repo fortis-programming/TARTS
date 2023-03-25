@@ -1,0 +1,30 @@
+.skills {
+
+
+  .accordion {
+    background-color: transparent;
+    .accordion-item {
+      background-color: transparent;
+      .accordion-header, button {
+        background-color: transparent;
+      }
+      .accordion-body {
+        background-color: transparent;
+        display: flex;
+        gap: 0.5rem;
+        svg, img {
+          height: 25px;
+          border-radius: 4px;
+          background-color: transparent;
+        }
+
+        a {
+          border: 1px solid whitesmoke;
+          padding: 4px 8px;
+          border-radius: 4px;
+          font-size: 0.899rem;
+        }
+      }
+    }
+  }
+}
