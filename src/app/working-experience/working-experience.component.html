@@ -1,34 +1,12 @@
 <div class="working-exprience">
   <section class="py-5">
     <ul class="timeline">
-      <li class="timeline-item mb-5">
+      <li class="timeline-item mb-5" *ngFor="let experience of experienceList">
         <p>
-          Junior .NET Developer <br>
-          <span>2022-2023</span>
+          {{ experience.title }} <br>
+          <span>{{ experience.year }}</span>
         </p>
-        <!-- <p>
-        My first corporate job, wherein I'm responsible of developing api's, frontend and debug issues for our clients
-        together with
-        the whole development team. We usually perform peer programming and daily stand-up.
-      </p> -->
-      </li>
-      <li class="timeline-item mb-5">
-        <p>Software Engineer Intern <br>
-          <span>4 months</span></p>
-        <!-- <p>
-        Took my internship @ YouSource.
-      </p> -->
-      </li>
-      <li class="timeline-item mb-5">
-        <p>
-          Freelance Software Developer <br>
-          <span>2020-2023</span>
-        </p>
-        <!-- <p>
-        Doing freelance project to explore new things, mostly thesis and capstone projects.
-      </p> -->
       </li>
     </ul>
   </section>
-
 </div>

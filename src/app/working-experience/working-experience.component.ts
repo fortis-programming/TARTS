@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ExperienceService } from '../services/experience.service';
+import { ExperienceModel } from '../_shared/models/experience.model';
 
 @Component({
   selector: 'app-working-experience',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./working-experience.component.scss']
 })
 export class WorkingExperienceComponent implements OnInit {
+  constructor(
+    private experienceService: ExperienceService
+  ) { }
 
-  constructor() { }
-
+  experienceList: ExperienceModel[] = [];
   ngOnInit(): void {
+    this.experienceService.getExperienceList().subscribe(response => {
+      this.experienceList = response.data.reverse();
+    })
   }
 
 }
